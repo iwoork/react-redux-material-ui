@@ -33,7 +33,7 @@
     "highcharts": "5.0.12",
     "highcharts-boost": "0.1.2",
     "highcharts-more": "0.1.2",
-    "material-ui": "0.18.7",
+    "material-ui": "0.19.0",
     "moment": "2.18.1",
     "react": "15.6.1",
     "react-addons-shallow-compare": "15.6.0",

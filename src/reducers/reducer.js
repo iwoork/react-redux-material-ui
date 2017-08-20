@@ -9,7 +9,7 @@ export default function appReducer(state = initialState.app, action) {
             return {
                 ...state,
                 drawer: !action.payload
-            }
+            };
         default:
             return state;
     }

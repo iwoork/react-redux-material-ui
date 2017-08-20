@@ -13,12 +13,12 @@ class App extends React.Component {
                 <AppBar
                     title="Bucket"
                     iconClassNameRight="muidocs-icon-navigation-expand-more"
-                    onLeftIconButtonTouchTap={(e) => {actions.toggleDrawer(app.drawer)}}
+                    onLeftIconButtonTouchTap={() => {actions.toggleDrawer(app.drawer);}}
                 />
                 <Drawer
                     open={app.drawer}
                     docked={false}
-                    onRequestChange={(e) => {actions.toggleDrawer(app.drawer)}}
+                    onRequestChange={() => {actions.toggleDrawer(app.drawer);}}
                 >
                     <MenuItem onTouchTap={() => {}}>Menu Item</MenuItem>
                     <MenuItem onTouchTap={() => {}}>Menu Item 2</MenuItem>
@@ -32,6 +32,8 @@ class App extends React.Component {
 }
 
 App.propTypes = {
+    app: PropTypes.object.isRequired,
+    actions: PropTypes.object,
     children: PropTypes.element
 };
 
